@@ -28,8 +28,6 @@ public class FacebookLoginFail {
         loginPage.enterEmail(email);
         loginPage.enterPassword(password);
         loginPage.clickLogin();
-
-        // Assert the presence of the error message
         Assert.assertTrue(loginPage.isErrorTextDisplayed(), "The error message was not displayed as expected.");
     }
 
